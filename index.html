@@ -1,53 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Iniciar sesión</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>EdVisto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
+
+    <title>Inicio de sesión</title>
 </head>
 <body>
   <main>
-    <div class="login-box">
-        <nav>
+    <div class="title">   
         <img class="avatar" src="img/logo.jpg" alt="logo edvisto">
-        <input id="btn-login" type="button" value="Login">
-        <input id="btn-profile" type="button" value="Mi perfil académico">
-        <input id="btn-evaluation" type="button" value="Evaluación">
-        <input id="btn-analysis" type="button" value="Analisis">
-        <input id="btn-contact" type="button" value="Contacto">
-        </nav>
-    </div>   
-    <div>
-    <form>  
-      <input id="proyect-name" type="text" required minlength="1" maxlength="30" placeholder="Nombre del proyecto">
-      <input id="proyect-leader" type="text" required minlength="1" maxlength="30" placeholder="Lider del proyecto">
-      <input id="e-mail"  required minlength="1" maxlength="30" placeholder="Correo electrónico">
-      <textarea name="proyect-specification" rows="10" cols="30">
-        Especificaciones del proyecto.  
-      </textarea>
-      <input id="button-save" type="button" value="Guardar">
-    </form>  
+        <h1>Iniciar sesión</h1>
     </div>
-    <iframe width="673" height="411"
-src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
-</iframe>
-<nav>
-  <input id="config-evaluation" type="button" value="Configurar evaluación">
-  <input id="result" type="button" value="Ver resultado">
-</nav>
-<div>
-  <button class="btn"><i class="fa-solid fa-circle-arrow-up" style="color: #0086bd;"></i></button>
-  <button class="btn"><i class="fa-solid fa-square-share-nodes" style="color: #0086bd;"></i></button>
-  <button class="btn"><i class="fa-solid fa-circle-microphone" style="color: #0086bc;"></i></button>
-  <button class="btn"><i class="fa-sharp fa-solid fa-circle-a" style="color: #0086bc;"></i></button>
-  </div>
-  
-</main>    
-<footer>
-    <div>team6</div>
-</footer>
+    <div class="principal">
+        <form>
+            <input type="text" id="e-mail" placeholder="Correo electrónico">
+            <input type="radio" id="docente" name="condiciones" value="Docente">
+            <label class="docente">Soy Docente</label>
+            <input type="radio" id="estudiante" name="condiciones" value="Estudiante">
+            <label class="estudiante">Soy Estudiante</label>
+            <input type="submit" id="button" value="Ingresar">
+        </form>    
+     </div>
+  </main>
+  <script src="js/script.js"> </script>
 </body>
-</html>
+</html>  
